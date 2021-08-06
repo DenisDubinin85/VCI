@@ -1,0 +1,868 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V16" />
+  <DocumentInfo>
+    <Created>2021-08-06T10:12:21.2195005Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V16 Update 1</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V16 Update 1</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P</DisplayName>
+        <DisplayVersion>V16 Update 1</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Advanced</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v4">
+  <Section Name="Input">
+    <Member Name="iDummyInput" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="en-US">Input dummy</MultiLanguageText></Comment></Member>
+  </Section>
+  <Section Name="Output">
+    <Member Name="oDummyOutput" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="en-US">Output dummy</MultiLanguageText></Comment></Member>
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="Data" Datatype="&quot;UDT Data Template lvl1&quot;" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="en-US">Standard data</MultiLanguageText></Comment><Sections><Section Name="None"><Member Name="AlarmsModule" Datatype="&quot;UDT Alarm Template lvl1&quot;"><Sections><Section Name="None"><Member Name="AlarmModuleAlarm" Datatype="Bool" /><Member Name="WarningModuleAlarm" Datatype="Bool" /><Member Name="WarningCommissioningModeHMI" Datatype="Bool" /><Member Name="MessageOutOfService" Datatype="Bool" /></Section></Sections></Member><Member Name="AlarmsDisable" Datatype="&quot;UDT Alarm Template lvl1&quot;"><Sections><Section Name="None"><Member Name="AlarmModuleAlarm" Datatype="Bool" /><Member Name="WarningModuleAlarm" Datatype="Bool" /><Member Name="WarningCommissioningModeHMI" Datatype="Bool" /><Member Name="MessageOutOfService" Datatype="Bool" /></Section></Sections></Member><Member Name="Status" Datatype="&quot;UDT Status Template lvl1&quot;"><Sections><Section Name="None"><Member Name="Active" Datatype="Bool" /><Member Name="Running" Datatype="Bool" /><Member Name="Output_Var" Datatype="Int" /><Member Name="Warning" Datatype="Bool" /><Member Name="Alarm" Datatype="Bool" /><Member Name="OutOfService" Datatype="Bool" /><Member Name="Mode" Datatype="Int" /></Section></Sections></Member><Member Name="CmdHMI" Datatype="&quot;UDT CmdHMI Template lvl1&quot;"><Sections><Section Name="None"><Member Name="Set" Datatype="Bool" /><Member Name="Reset" Datatype="Bool" /><Member Name="Run" Datatype="Bool" /><Member Name="CommissioningMode" Datatype="Bool" /><Member Name="ResetAlarms" Datatype="Bool" /><Member Name="ResetSwitchCounter" Datatype="Bool" /><Member Name="ResetHourCounter" Datatype="Bool" /></Section></Sections></Member><Member Name="CmdCS" Datatype="&quot;UDT CmdCS Template lvl1&quot;"><Sections><Section Name="None"><Member Name="Activate" Datatype="Bool" /></Section></Sections></Member><Member Name="Report" Datatype="&quot;UDT Report Template lvl1&quot;"><Sections><Section Name="None"><Member Name="ActiveHours" Datatype="LTime" /><Member Name="SwitchCounter" Datatype="DInt" /></Section></Sections></Member><Member Name="Config" Datatype="&quot;UDT Config Template lvl1&quot;"><Sections><Section Name="None"><Member Name="Spare00" Datatype="Bool" /></Section></Sections></Member><Member Name="ModuleName" Datatype="String" /><Member Name="ModuleDescription" Datatype="String" /></Section></Sections></Member>
+    <Member Name="RData" Datatype="&quot;UDT RData Template lvl1&quot;" Remanence="Retain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="en-US">Retain Data (saved after PLC restart)</MultiLanguageText></Comment><Sections><Section Name="None"><Member Name="Settings" Datatype="&quot;UDT Settings Template lvl1&quot;"><Sections><Section Name="None"><Member Name="OutOfService" Datatype="Bool" /><Member Name="Input_Var" Datatype="Int" /><Member Name="Input_Max" Datatype="Int" /><Member Name="Input_Min" Datatype="Int" /><Member Name="Output_Max" Datatype="Int" /><Member Name="Output_Min" Datatype="Int" /></Section></Sections></Member></Section></Sections></Member>
+    <Member Name="sChangeLanguage" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="en-US">Check for language change</MultiLanguageText></Comment></Member>
+    <Member Name="PositiveEdge" Datatype="Array[1..3] of R_TRIG" Version="1.0" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="en-US">Positive edge alarms</MultiLanguageText></Comment><Sections><Section Name="Input"><Member Name="CLK" Datatype="Bool" /></Section><Section Name="Output"><Member Name="Q" Datatype="Bool" /></Section><Section Name="InOut" /><Section Name="Static"><Member Name="Stat_Bit" Datatype="Bool" /></Section></Sections></Member>
+    <Member Name="NegativeEdge" Datatype="Array[1..3] of F_TRIG" Version="1.0" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="en-US">Negative edge alarms</MultiLanguageText></Comment><Sections><Section Name="Input"><Member Name="CLK" Datatype="Bool" /></Section><Section Name="Output"><Member Name="Q" Datatype="Bool" /></Section><Section Name="InOut" /><Section Name="Static"><Member Name="Stat_Bit" Datatype="Bool" /></Section></Sections></Member>
+    <Member Name="AlarmDummy" Datatype="Program_Alarm" Version="1.0" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="en-US">Alarm: Dummy alarm</MultiLanguageText></Comment><Sections><Section Name="Base"><Sections Datatype="ALARM_BASE" Version="1.0"><Section Name="Input" /><Section Name="Output" /><Section Name="InOut" /><Section Name="Static"><Member Name="Alarm_ID" Datatype="Event_ID" Version="1.0"><Sections><Section Name="None"><Member Name="ALID" Datatype="Word" /><Member Name="ARID" Datatype="Word" /></Section></Sections></Member><Member Name="HANDLE" Datatype="DWord" /></Section></Sections></Section><Section Name="Input"><Member Name="SIG" Datatype="Bool" /><Member Name="TIMESTAMP" Datatype="LDT" /><Member Name="SD_1" Datatype="Variant" /><Member Name="SD_2" Datatype="Variant" /><Member Name="SD_3" Datatype="Variant" /><Member Name="SD_4" Datatype="Variant" /><Member Name="SD_5" Datatype="Variant" /><Member Name="SD_6" Datatype="Variant" /><Member Name="SD_7" Datatype="Variant" /><Member Name="SD_8" Datatype="Variant" /><Member Name="SD_9" Datatype="Variant" /><Member Name="SD_10" Datatype="Variant" /></Section><Section Name="Output"><Member Name="Error" Datatype="Bool" /><Member Name="Status" Datatype="Word" /></Section><Section Name="InOut" /><Section Name="Static"><Member Name="SD_0" Datatype="AssocValue_0" Version="1.0"><Sections><Section Name="None"><Member Name="Syntax" Datatype="UInt" /><Member Name="Aap" Datatype="Byte" /></Section></Sections></Member><Member Name="SIG_Edge_History" Datatype="Bool" /><Member Name="INIT_FB_State" Datatype="DWord" /></Section></Sections></Member>
+  </Section>
+  <Section Name="Temp">
+    <Member Name="dummyCondition" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Temp dummy condition</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="Constant">
+    <Member Name="cAlarmDummy" Datatype="Int" Accessibility="Public">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Array index of alarm</MultiLanguageText>
+      </Comment>
+      <StartValue>1</StartValue>
+    </Member>
+    <Member Name="cWarningCommissioningModeHMI" Datatype="Int" Accessibility="Public">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Array index of alarm</MultiLanguageText>
+      </Comment>
+      <StartValue>2</StartValue>
+    </Member>
+    <Member Name="cMessageOutOfService" Datatype="Int" Accessibility="Public">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Array index of alarm</MultiLanguageText>
+      </Comment>
+      <StartValue>3</StartValue>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>@FB Template Lvl1</Name>
+      <Number>13</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <LineComment Inserted="false" NoClosingBracket="false" UId="21">
+    <Text UId="22">*************************************************************************************************//</Text>
+  </LineComment>
+  <NewLine Num="1" UId="23" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="24">
+    <Text UId="25">*                                                                                               *//</Text>
+  </LineComment>
+  <NewLine Num="1" UId="26" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="27">
+    <Text UId="28">*                               Alarms and warnings handling                                    *//</Text>
+  </LineComment>
+  <NewLine Num="1" UId="29" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="30">
+    <Text UId="31">*                                                                                               *//</Text>
+  </LineComment>
+  <NewLine Num="1" UId="32" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="33">
+    <Text UId="34">*  Reset all internal alarms and warnings                                                       *//</Text>
+  </LineComment>
+  <NewLine Num="1" UId="35" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="36">
+    <Text UId="37">*  Set the specific module alarms and warnings                                                  *//</Text>
+  </LineComment>
+  <NewLine Num="1" UId="38" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="39">
+    <Text UId="40">*  If there is an alarm or warning set the general alarm or warning bit                         *//</Text>
+  </LineComment>
+  <NewLine Num="1" UId="41" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="42">
+    <Text UId="43">*                                                                                               *//</Text>
+  </LineComment>
+  <NewLine Num="1" UId="44" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="45">
+    <Text UId="46">*************************************************************************************************//   </Text>
+  </LineComment>
+  <NewLine Num="2" UId="47" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="48">
+    <Text UId="49"> Reset all warning type alarms here</Text>
+  </LineComment>
+  <NewLine Num="1" UId="50" />
+  <Access Scope="LocalVariable" UId="51">
+    <Symbol UId="52">
+      <Component Name="Data" UId="53" />
+      <Token Text="." UId="54" />
+      <Component Name="AlarmsModule" UId="55" />
+      <Token Text="." UId="56" />
+      <Component Name="WarningCommissioningModeHMI" UId="57" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="58" />
+  <Token Text=":=" UId="59" />
+  <Blank Num="1" UId="60" />
+  <Access Scope="LiteralConstant" UId="61">
+    <Constant UId="62">
+      <ConstantValue UId="64">False</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="65" />
+  <NewLine Num="1" UId="66" />
+  <Access Scope="LocalVariable" UId="67">
+    <Symbol UId="68">
+      <Component Name="Data" UId="69" />
+      <Token Text="." UId="70" />
+      <Component Name="Status" UId="71" />
+      <Token Text="." UId="72" />
+      <Component Name="Warning" UId="73" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="74" />
+  <Token Text=":=" UId="75" />
+  <Blank Num="1" UId="76" />
+  <Access Scope="LiteralConstant" UId="77">
+    <Constant UId="78">
+      <ConstantValue UId="80">False</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="81" />
+  <NewLine Num="2" UId="82" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="83">
+    <Text UId="84"> Reset all message type alarms here</Text>
+  </LineComment>
+  <NewLine Num="1" UId="85" />
+  <Access Scope="LocalVariable" UId="86">
+    <Symbol UId="87">
+      <Component Name="Data" UId="88" />
+      <Token Text="." UId="89" />
+      <Component Name="AlarmsModule" UId="90" />
+      <Token Text="." UId="91" />
+      <Component Name="MessageOutOfService" UId="92" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="93" />
+  <Token Text=":=" UId="94" />
+  <Blank Num="1" UId="95" />
+  <Access Scope="LiteralConstant" UId="96">
+    <Constant UId="97">
+      <ConstantValue UId="99">False</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="100" />
+  <NewLine Num="2" UId="101" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="102">
+    <Text UId="103"> SET DUMMY ALARM</Text>
+  </LineComment>
+  <NewLine Num="1" UId="104" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="105">
+    <Text UId="106"> Alarm: Dummy alarm</Text>
+  </LineComment>
+  <NewLine Num="1" UId="107" />
+  <Token Text="IF" UId="108" />
+  <Blank Num="1" UId="109" />
+  <Access Scope="LocalVariable" UId="110">
+    <Symbol UId="111">
+      <Component Name="dummyCondition" UId="112" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="113" />
+  <Token Text="AND" UId="114" />
+  <Blank Num="1" UId="115" />
+  <Token Text="NOT" UId="116" />
+  <Blank Num="1" UId="117" />
+  <Access Scope="LocalVariable" UId="118">
+    <Symbol UId="119">
+      <Component Name="Data" UId="120" />
+      <Token Text="." UId="121" />
+      <Component Name="AlarmsDisable" UId="122" />
+      <Token Text="." UId="123" />
+      <Component Name="AlarmModuleAlarm" UId="124" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="125" />
+  <Token Text="THEN" UId="126" />
+  <NewLine Num="1" UId="127" />
+  <Blank Num="4" UId="128" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="129">
+    <Text UId="130"> MODIFY CONDITIONS AND ALARM ACCORDINGLY</Text>
+  </LineComment>
+  <NewLine Num="1" UId="131" />
+  <Blank Num="4" UId="132" />
+  <Access Scope="LocalVariable" UId="133">
+    <Symbol UId="134">
+      <Component Name="Data" UId="135" />
+      <Token Text="." UId="136" />
+      <Component Name="AlarmsModule" UId="137" />
+      <Token Text="." UId="138" />
+      <Component Name="AlarmModuleAlarm" UId="139" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="140" />
+  <Token Text=":=" UId="141" />
+  <Blank Num="1" UId="142" />
+  <Access Scope="LiteralConstant" UId="143">
+    <Constant UId="144">
+      <ConstantValue UId="146">True</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="147" />
+  <NewLine Num="1" UId="148" />
+  <Blank Num="4" UId="149" />
+  <Access Scope="LocalVariable" UId="150">
+    <Symbol UId="151">
+      <Component Name="Data" UId="152" />
+      <Token Text="." UId="153" />
+      <Component Name="Status" UId="154" />
+      <Token Text="." UId="155" />
+      <Component Name="Alarm" UId="156" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="157" />
+  <Token Text=":=" UId="158" />
+  <Blank Num="1" UId="159" />
+  <Access Scope="LiteralConstant" UId="160">
+    <Constant UId="161">
+      <ConstantValue UId="163">true</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="164" />
+  <NewLine Num="1" UId="165" />
+  <Token Text="END_IF" UId="166" />
+  <Token Text=";" UId="167" />
+  <NewLine Num="2" UId="168" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="169">
+    <Text UId="170"> Warning: Module is set to commissioning mode from HMI panel</Text>
+  </LineComment>
+  <NewLine Num="1" UId="171" />
+  <Token Text="IF" UId="172" />
+  <Blank Num="1" UId="173" />
+  <Access Scope="LocalVariable" UId="174">
+    <Symbol UId="175">
+      <Component Name="Data" UId="176" />
+      <Token Text="." UId="177" />
+      <Component Name="CmdHMI" UId="178" />
+      <Token Text="." UId="179" />
+      <Component Name="CommissioningMode" UId="180" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="181" />
+  <Token Text="THEN" UId="182" />
+  <NewLine Num="1" UId="183" />
+  <Blank Num="4" UId="184" />
+  <Access Scope="LocalVariable" UId="185">
+    <Symbol UId="186">
+      <Component Name="Data" UId="187" />
+      <Token Text="." UId="188" />
+      <Component Name="AlarmsModule" UId="189" />
+      <Token Text="." UId="190" />
+      <Component Name="WarningCommissioningModeHMI" UId="191" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="192" />
+  <Token Text=":=" UId="193" />
+  <Blank Num="1" UId="194" />
+  <Access Scope="LiteralConstant" UId="195">
+    <Constant UId="196">
+      <ConstantValue UId="198">True</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="199" />
+  <NewLine Num="1" UId="200" />
+  <Blank Num="4" UId="201" />
+  <Access Scope="LocalVariable" UId="202">
+    <Symbol UId="203">
+      <Component Name="Data" UId="204" />
+      <Token Text="." UId="205" />
+      <Component Name="Status" UId="206" />
+      <Token Text="." UId="207" />
+      <Component Name="Warning" UId="208" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="209" />
+  <Token Text=":=" UId="210" />
+  <Blank Num="1" UId="211" />
+  <Access Scope="LiteralConstant" UId="212">
+    <Constant UId="213">
+      <ConstantValue UId="215">True</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="216" />
+  <NewLine Num="1" UId="217" />
+  <Token Text="END_IF" UId="218" />
+  <Token Text=";" UId="219" />
+  <NewLine Num="2" UId="220" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="221">
+    <Text UId="222"> SET OUT OF SERVICE ALARM</Text>
+  </LineComment>
+  <NewLine Num="1" UId="223" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="224">
+    <Text UId="225"> Message: Module is out of service (generates no alarms anymore)</Text>
+  </LineComment>
+  <NewLine Num="1" UId="226" />
+  <Token Text="IF" UId="227" />
+  <Blank Num="1" UId="228" />
+  <Access Scope="LocalVariable" UId="229">
+    <Symbol UId="230">
+      <Component Name="RData" UId="231" />
+      <Token Text="." UId="232" />
+      <Component Name="Settings" UId="233" />
+      <Token Text="." UId="234" />
+      <Component Name="OutOfService" UId="235" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="236" />
+  <Token Text="THEN" UId="237" />
+  <NewLine Num="1" UId="238" />
+  <Blank Num="4" UId="239" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="240">
+    <Text UId="241"> RESET ALL ALARMS, WARNINGS AND MESSAGES HERE</Text>
+  </LineComment>
+  <NewLine Num="1" UId="242" />
+  <Blank Num="4" UId="243" />
+  <Access Scope="LocalVariable" UId="244">
+    <Symbol UId="245">
+      <Component Name="Data" UId="246" />
+      <Token Text="." UId="247" />
+      <Component Name="AlarmsModule" UId="248" />
+      <Token Text="." UId="249" />
+      <Component Name="MessageOutOfService" UId="250" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="251" />
+  <Token Text=":=" UId="252" />
+  <Blank Num="1" UId="253" />
+  <Token Text="NOT" UId="254" />
+  <Blank Num="1" UId="255" />
+  <Access Scope="LocalVariable" UId="256">
+    <Symbol UId="257">
+      <Component Name="Data" UId="258" />
+      <Token Text="." UId="259" />
+      <Component Name="AlarmsDisable" UId="260" />
+      <Token Text="." UId="261" />
+      <Component Name="MessageOutOfService" UId="262" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="263" />
+  <NewLine Num="1" UId="264" />
+  <Blank Num="4" UId="265" />
+  <Access Scope="LocalVariable" UId="266">
+    <Symbol UId="267">
+      <Component Name="Data" UId="268" />
+      <Token Text="." UId="269" />
+      <Component Name="AlarmsModule" UId="270" />
+      <Token Text="." UId="271" />
+      <Component Name="WarningCommissioningModeHMI" UId="272" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="273" />
+  <Token Text=":=" UId="274" />
+  <Blank Num="1" UId="275" />
+  <Access Scope="LiteralConstant" UId="276">
+    <Constant UId="277">
+      <ConstantValue UId="279">False</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="280" />
+  <NewLine Num="1" UId="281" />
+  <Blank Num="4" UId="282" />
+  <Access Scope="LocalVariable" UId="283">
+    <Symbol UId="284">
+      <Component Name="Data" UId="285" />
+      <Token Text="." UId="286" />
+      <Component Name="Status" UId="287" />
+      <Token Text="." UId="288" />
+      <Component Name="Alarm" UId="289" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="290" />
+  <Token Text=":=" UId="291" />
+  <Blank Num="1" UId="292" />
+  <Access Scope="LiteralConstant" UId="293">
+    <Constant UId="294">
+      <ConstantValue UId="296">False</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="297" />
+  <NewLine Num="1" UId="298" />
+  <Blank Num="4" UId="299" />
+  <Access Scope="LocalVariable" UId="300">
+    <Symbol UId="301">
+      <Component Name="Data" UId="302" />
+      <Token Text="." UId="303" />
+      <Component Name="Status" UId="304" />
+      <Token Text="." UId="305" />
+      <Component Name="Warning" UId="306" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="307" />
+  <Token Text=":=" UId="308" />
+  <Blank Num="1" UId="309" />
+  <Access Scope="LiteralConstant" UId="310">
+    <Constant UId="311">
+      <ConstantValue UId="313">False</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="314" />
+  <NewLine Num="1" UId="315" />
+  <Token Text="END_IF" UId="316" />
+  <Token Text=";" UId="317" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Alarms</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="RData" />
+        <Component Name="Settings" />
+        <Component Name="Input_Var" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="RData" />
+        <Component Name="Settings" />
+        <Component Name="Input_Min" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="RData" />
+        <Component Name="Settings" />
+        <Component Name="Input_Max" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="RData" />
+        <Component Name="Settings" />
+        <Component Name="Output_Min" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="25">
+      <Symbol>
+        <Component Name="RData" />
+        <Component Name="Settings" />
+        <Component Name="Output_Max" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="Data" />
+        <Component Name="Status" />
+        <Component Name="Output_Var" />
+      </Symbol>
+    </Access>
+    <Call UId="27">
+      <CallInfo Name="@FC Scale INT_INT" BlockType="FC">
+        <Parameter Name="Ba_In_Value" Section="Input" Type="Int" />
+        <Parameter Name="Ba_In_Limit_Min" Section="Input" Type="DInt" />
+        <Parameter Name="Ba_In_Limit_Max" Section="Input" Type="DInt" />
+        <Parameter Name="Ba_Out_Limit_Min" Section="Input" Type="DInt" />
+        <Parameter Name="Ba_Out_Limit_Max" Section="Input" Type="DInt" />
+        <Parameter Name="Ya_Value_INT" Section="Output" Type="Int" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="28">
+      <Powerrail />
+      <NameCon UId="27" Name="en" />
+    </Wire>
+    <Wire UId="29">
+      <IdentCon UId="21" />
+      <NameCon UId="27" Name="Ba_In_Value" />
+    </Wire>
+    <Wire UId="30">
+      <IdentCon UId="22" />
+      <NameCon UId="27" Name="Ba_In_Limit_Min" />
+    </Wire>
+    <Wire UId="31">
+      <IdentCon UId="23" />
+      <NameCon UId="27" Name="Ba_In_Limit_Max" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="24" />
+      <NameCon UId="27" Name="Ba_Out_Limit_Min" />
+    </Wire>
+    <Wire UId="33">
+      <IdentCon UId="25" />
+      <NameCon UId="27" Name="Ba_Out_Limit_Max" />
+    </Wire>
+    <Wire UId="34">
+      <NameCon UId="27" Name="Ya_Value_INT" />
+      <IdentCon UId="26" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="Data" />
+        <Component Name="Status" />
+        <Component Name="Output_Var" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>2000</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="Data" />
+        <Component Name="Status" />
+        <Component Name="Alarm" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="Data" />
+        <Component Name="Status" />
+        <Component Name="Active" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="25">
+      <Symbol>
+        <Component Name="Data" />
+        <Component Name="Status" />
+        <Component Name="Running" />
+      </Symbol>
+    </Access>
+    <Part Name="Ge" UId="26">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Contact" UId="27">
+      <Negated Name="operand" />
+    </Part>
+    <Part Name="Contact" UId="28" />
+    <Part Name="Coil" UId="29" />
+  </Parts>
+  <Wires>
+    <Wire UId="30">
+      <Powerrail />
+      <NameCon UId="26" Name="pre" />
+    </Wire>
+    <Wire UId="31">
+      <IdentCon UId="21" />
+      <NameCon UId="26" Name="in1" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="22" />
+      <NameCon UId="26" Name="in2" />
+    </Wire>
+    <Wire UId="33">
+      <NameCon UId="26" Name="out" />
+      <NameCon UId="27" Name="in" />
+    </Wire>
+    <Wire UId="34">
+      <IdentCon UId="23" />
+      <NameCon UId="27" Name="operand" />
+    </Wire>
+    <Wire UId="35">
+      <NameCon UId="27" Name="out" />
+      <NameCon UId="28" Name="in" />
+    </Wire>
+    <Wire UId="36">
+      <IdentCon UId="24" />
+      <NameCon UId="28" Name="operand" />
+    </Wire>
+    <Wire UId="37">
+      <NameCon UId="28" Name="out" />
+      <NameCon UId="29" Name="in" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="25" />
+      <NameCon UId="29" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="10" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Module is in run</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <LineComment Inserted="false" NoClosingBracket="false" UId="21">
+    <Text UId="22">*************************************************************************************************//</Text>
+  </LineComment>
+  <NewLine Num="1" UId="23" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="24">
+    <Text UId="25">*                                                                                               *//</Text>
+  </LineComment>
+  <NewLine Num="1" UId="26" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="27">
+    <Text UId="28">*                                       Status handling                                         *//</Text>
+  </LineComment>
+  <NewLine Num="1" UId="29" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="30">
+    <Text UId="31">*                                                                                               *//</Text>
+  </LineComment>
+  <NewLine Num="1" UId="32" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="33">
+    <Text UId="34">*  Copy the tag name and the tag description                                                    *//</Text>
+  </LineComment>
+  <NewLine Num="1" UId="35" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="36">
+    <Text UId="37">*  Copy the standard statuses from the upper level module                                       *//</Text>
+  </LineComment>
+  <NewLine Num="1" UId="38" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="39">
+    <Text UId="40">*  Set/reset the HMI command buttons                                                            *//</Text>
+  </LineComment>
+  <NewLine Num="1" UId="41" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="42">
+    <Text UId="43">*  Activate the module (Case statement for different modes)                                     *//              </Text>
+  </LineComment>
+  <NewLine Num="1" UId="44" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="45">
+    <Text UId="46">*                                                                                               *//</Text>
+  </LineComment>
+  <NewLine Num="1" UId="47" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="48">
+    <Text UId="49">*************************************************************************************************//     </Text>
+  </LineComment>
+  <NewLine Num="2" UId="50" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="51">
+    <Text UId="52"> Reset Output</Text>
+  </LineComment>
+  <NewLine Num="1" UId="53" />
+  <Access Scope="LocalVariable" UId="54">
+    <Symbol UId="55">
+      <Component Name="Data" UId="56" />
+      <Token Text="." UId="57" />
+      <Component Name="Status" UId="58" />
+      <Token Text="." UId="59" />
+      <Component Name="Active" UId="60" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="61" />
+  <Token Text=":=" UId="62" />
+  <Blank Num="1" UId="63" />
+  <Access Scope="LiteralConstant" UId="64">
+    <Constant UId="65">
+      <ConstantValue UId="67">false</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="68" />
+  <NewLine Num="2" UId="69" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="70">
+    <Text UId="71"> Set Status Out of service</Text>
+  </LineComment>
+  <NewLine Num="1" UId="72" />
+  <Access Scope="LocalVariable" UId="73">
+    <Symbol UId="74">
+      <Component Name="Data" UId="75" />
+      <Token Text="." UId="76" />
+      <Component Name="Status" UId="77" />
+      <Token Text="." UId="78" />
+      <Component Name="OutOfService" UId="79" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="80" />
+  <Token Text=":=" UId="81" />
+  <Blank Num="1" UId="82" />
+  <Access Scope="LocalVariable" UId="83">
+    <Symbol UId="84">
+      <Component Name="RData" UId="85" />
+      <Token Text="." UId="86" />
+      <Component Name="Settings" UId="87" />
+      <Token Text="." UId="88" />
+      <Component Name="OutOfService" UId="89" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="90" />
+  <NewLine Num="2" UId="91" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="92">
+    <Text UId="93"> Set Status Mode</Text>
+  </LineComment>
+  <NewLine Num="1" UId="94" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="95">
+    <Text UId="96"> Override Mode if commissioning bit in HMI is set</Text>
+  </LineComment>
+  <NewLine Num="1" UId="97" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="13" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="15" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Status</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="17" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="18" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>
