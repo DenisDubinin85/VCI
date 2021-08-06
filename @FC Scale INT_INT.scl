@@ -1,0 +1,72 @@
+﻿FUNCTION "@FC Scale INT_INT" : Void
+{ S7_Optimized_Access := 'TRUE' }
+AUTHOR : SEL
+NAME : 'Standard'
+VERSION : 1.0
+//  
+//===================================================================================================
+//===        This function scales an input signal to a desired level. For example:                ===
+//===        An input signal, varieing between "0" and "1000" must be scaled to an                ===
+//===        output signal between "0" and "27648".Input value "800" gives the result "22118".    ===
+//===                                                                                             ===
+//===        This value is calculated with the following formula:                                 ===
+//===                                                                                             ===
+//===        (In_Signal - In_Limit_Min)*(Out_Limit_Max - Out_Limit_Min)                           ===
+//===        -------------------------------------------------------------- + Out_Limit_Min       ===
+//===                    (In_Limit_Max + In_Limit_Min)                                            ===
+//===================================================================================================
+   VAR_INPUT 
+      Ba_In_Value : Int;
+      Ba_In_Limit_Min : DInt;
+      Ba_In_Limit_Max : DInt;
+      Ba_Out_Limit_Min : DInt;
+      Ba_Out_Limit_Max : DInt;
+   END_VAR
+
+   VAR_OUTPUT 
+      Ya_Value_INT : Int;
+   END_VAR
+
+   VAR_TEMP 
+      F_In_Value : DInt;
+      F_Out_Value : DInt;
+   END_VAR
+
+
+BEGIN
+	//***********************************************************************************************
+	//*  Name:           FC Scale DINT_INT                                                     
+	//*  system:         Tia Portal V15.1                                                   
+	//*  version:        01.00                                                     
+	//*  functionality:  Scales and limits a INT value to an INT
+	//*                                                                                         
+	//* ---------------------------------------------------------------------------------------------
+	//*  change log table:                                                                           
+	//*  version   date          expert in charge                        changes applied                     
+	//*  01.00     0000-00-00    ...........                             Block created       
+	//*  
+	//************************************************************************************************
+	
+	#F_In_Value := INT_TO_DINT(#Ba_In_Value);     // Convert signal into a double integer format.
+	
+	IF (#F_In_Value < #Ba_In_Limit_Min) THEN      // Check for lower input limit.
+	    #F_In_Value := #Ba_In_Limit_Min;
+	END_IF;
+	
+	IF (#F_In_Value > #Ba_In_Limit_Max) THEN      // Check for upper input limit.
+	    #F_In_Value := #Ba_In_Limit_Max;
+	END_IF;
+	
+	// Calculate output signal
+	#F_Out_Value := ((#F_In_Value - #Ba_In_Limit_Min) * (#Ba_Out_Limit_Max - #Ba_Out_Limit_Min))
+	/ (#Ba_In_Limit_Max - #Ba_In_Limit_Min) - #Ba_Out_Limit_Min;
+	
+	#Ya_Value_INT := DINT_TO_INT(#F_Out_Value);  // Convert double into a integer format.
+	
+	//=================================================================================================
+	// END OF THE PROGRAM
+	//=================================================================================================
+	ENO := TRUE;
+	
+END_FUNCTION
+
