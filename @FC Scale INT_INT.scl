@@ -59,7 +59,7 @@ BEGIN
 	
 	// Calculate output signal
 	#F_Out_Value := ((#F_In_Value - #Ba_In_Limit_Min) * (#Ba_Out_Limit_Max - #Ba_Out_Limit_Min))
-	/ (#Ba_In_Limit_Max - #Ba_In_Limit_Min) - #Ba_Out_Limit_Min;
+	/ (#Ba_In_Limit_Max - #Ba_In_Limit_Min) + #Ba_Out_Limit_Min;
 	
 	#Ya_Value_INT := DINT_TO_INT(#F_Out_Value);  // Convert double into a integer format.
 	
